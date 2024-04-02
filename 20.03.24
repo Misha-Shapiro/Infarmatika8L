@@ -1,0 +1,14 @@
+def average(*args):
+    x = 0
+    z = 0
+    
+    for a in args:
+        x += a
+        z += 1
+    
+    if z == 0:
+        return 0
+    else:
+        return x / z
+
+print(average(1, 2, 3, 4, 5)) 
