@@ -1,0 +1,10 @@
+expression = 1*8**2 + 0*8**1 + 5 + 5*37**1 + 15*37**0 + 10*3**3 + 11*3**2 + 0*3**1 + 1*3**0
+count_of_H = 0
+
+while expression > 0:
+    digit = expression % 24
+    if digit == 7:
+        count_of_H += 1
+    expression //= 24
+
+print("Количество букв H в значении выражения:", count_of_H)
