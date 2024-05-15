@@ -1,0 +1,18 @@
+def count_zeros(n):
+    zeros = 0
+    while n > 0:
+        if n % 3 == 0:
+            zeros += 1
+        n = n // 3
+    return zeros
+
+result = 4**3 * 3**19
+result_base_3 = ""
+
+while result > 0:
+    result_base_3 = str(result % 3) + result_base_3
+    result = result // 3
+
+zeros_count = count_zeros(result)
+
+print(zeros_count)
